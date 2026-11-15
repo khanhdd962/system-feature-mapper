@@ -1,0 +1,88 @@
+{
+  "actors": [
+    "Khách dùng bản mẫu"
+  ],
+  "alternativeFlows": [],
+  "documentationPath": null,
+  "exceptionCases": [],
+  "id": "orders",
+  "inputs": [],
+  "kind": "module",
+  "mainFlow": [],
+  "name": "Đơn hàng",
+  "outputs": [
+    "Danh sách đơn hoặc xác nhận hủy và hoàn tồn kho."
+  ],
+  "parentId": "system",
+  "preconditions": [
+    "Đã đăng nhập."
+  ],
+  "purpose": "Xem các đơn đã đặt và hủy đơn còn mới.",
+  "relatedFeatureIds": [],
+  "shortDescription": "Xem các đơn đã đặt và hủy đơn còn mới.",
+  "unknowns": {
+    "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "exceptionCases": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "mainFlow": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+  },
+  "usageSteps": [
+    "Xem lịch sử đơn.",
+    "Chọn mã đơn mới cần hủy."
+  ],
+  "verification": {
+    "claims": {
+      "actors": [
+        0,
+        1,
+        2
+      ],
+      "outputs": [
+        0,
+        1,
+        2
+      ],
+      "preconditions": [
+        0,
+        1,
+        2
+      ],
+      "purpose": [
+        0,
+        1,
+        2
+      ],
+      "usageSteps": [
+        0,
+        1,
+        2
+      ]
+    },
+    "evidence": [
+      {
+        "endLine": 4,
+        "path": "README.md",
+        "startLine": 1,
+        "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+        "type": "docs"
+      },
+      {
+        "endLine": 6,
+        "path": "ui/navigation.html",
+        "startLine": 2,
+        "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+        "type": "ui"
+      },
+      {
+        "endLine": 50,
+        "path": "domain.py",
+        "startLine": 35,
+        "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Đơn hàng",
+        "type": "domain"
+      }
+    ],
+    "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+    "runtimeObserved": false,
+    "status": "source_confirmed"
+  }
+}

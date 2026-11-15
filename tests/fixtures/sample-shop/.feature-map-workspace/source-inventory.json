@@ -1,0 +1,44 @@
+{
+  "config": {},
+  "detectedStacks": [],
+  "excluded": {
+    ".feature-map-workspace": 1,
+    "__pycache__": 1,
+    "feature-map": 1
+  },
+  "files": [
+    {
+      "bytes": 479,
+      "classification": "documentation",
+      "lines": 4,
+      "metadataOnly": false,
+      "path": "README.md",
+      "sha256": "ea1ed60103858d6d2d52e1f74dec32eab5f4c4d2fe384b1d46a6b761244a414b"
+    },
+    {
+      "bytes": 2077,
+      "classification": "domain",
+      "lines": 50,
+      "metadataOnly": false,
+      "path": "domain.py",
+      "sha256": "9acf2baff7546ee768d635f6067dde3ae67632329ccc77031e143ea621fa07e7"
+    },
+    {
+      "bytes": 283,
+      "classification": "routing",
+      "lines": 8,
+      "metadataOnly": false,
+      "path": "routes.py",
+      "sha256": "8c6eed9eed4865d9e1087c3284bc92a880b5d2c256a74754c0b5b11ead3c9b33"
+    },
+    {
+      "bytes": 815,
+      "classification": "navigation",
+      "lines": 7,
+      "metadataOnly": false,
+      "path": "ui/navigation.html",
+      "sha256": "1c08cda009a4993d9622ef5eef0844f50b5e5207c9ee491adf8034ffdd5d30ea"
+    }
+  ],
+  "gaps": []
+}

@@ -1,0 +1,274 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "id": "sample",
+    "name": "Cửa hàng mẫu",
+    "description": "Dữ liệu minh họa"
+  },
+  "generatedAt": "2026-11-15T00:00:00Z",
+  "rootId": "system",
+  "features": [
+    {
+      "id": "system",
+      "parentId": null,
+      "name": "Cửa hàng mẫu",
+      "kind": "system",
+      "shortDescription": "Dữ liệu minh họa cho viewer.",
+      "purpose": "Khám phá chức năng trong dữ liệu mẫu.",
+      "documentationPath": null,
+      "verification": {
+        "status": "inferred",
+        "runtimeObserved": false,
+        "evidence": [],
+        "notes": "Ví dụ tổng hợp, không phải kết quả phân tích ứng dụng thực tế."
+      },
+      "actors": [
+        "Khách hàng"
+      ],
+      "preconditions": [],
+      "usageSteps": [],
+      "inputs": [],
+      "outputs": [],
+      "mainFlow": [],
+      "alternativeFlows": [],
+      "exceptionCases": [],
+      "relatedFeatureIds": [],
+      "unknowns": {
+        "preconditions": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "usageSteps": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "inputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "outputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "mainFlow": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "alternativeFlows": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "exceptionCases": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "relatedFeatureIds": "Chưa có bằng chứng trong ví dụ tổng hợp."
+      }
+    },
+    {
+      "id": "account",
+      "parentId": "system",
+      "name": "Tài khoản",
+      "kind": "module",
+      "shortDescription": "Dữ liệu minh họa cho viewer.",
+      "purpose": "Khám phá chức năng trong dữ liệu mẫu.",
+      "documentationPath": null,
+      "verification": {
+        "status": "inferred",
+        "runtimeObserved": false,
+        "evidence": [],
+        "notes": "Ví dụ tổng hợp, không phải kết quả phân tích ứng dụng thực tế."
+      },
+      "actors": [
+        "Khách hàng"
+      ],
+      "preconditions": [],
+      "usageSteps": [],
+      "inputs": [],
+      "outputs": [],
+      "mainFlow": [],
+      "alternativeFlows": [],
+      "exceptionCases": [],
+      "relatedFeatureIds": [],
+      "unknowns": {
+        "preconditions": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "usageSteps": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "inputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "outputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "mainFlow": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "alternativeFlows": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "exceptionCases": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "relatedFeatureIds": "Chưa có bằng chứng trong ví dụ tổng hợp."
+      }
+    },
+    {
+      "id": "shop",
+      "parentId": "system",
+      "name": "Mua sắm",
+      "kind": "module",
+      "shortDescription": "Dữ liệu minh họa cho viewer.",
+      "purpose": "Khám phá chức năng trong dữ liệu mẫu.",
+      "documentationPath": null,
+      "verification": {
+        "status": "inferred",
+        "runtimeObserved": false,
+        "evidence": [],
+        "notes": "Ví dụ tổng hợp, không phải kết quả phân tích ứng dụng thực tế."
+      },
+      "actors": [
+        "Khách hàng"
+      ],
+      "preconditions": [],
+      "usageSteps": [],
+      "inputs": [],
+      "outputs": [],
+      "mainFlow": [],
+      "alternativeFlows": [],
+      "exceptionCases": [],
+      "relatedFeatureIds": [],
+      "unknowns": {
+        "preconditions": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "usageSteps": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "inputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "outputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "mainFlow": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "alternativeFlows": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "exceptionCases": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "relatedFeatureIds": "Chưa có bằng chứng trong ví dụ tổng hợp."
+      }
+    },
+    {
+      "id": "orders",
+      "parentId": "system",
+      "name": "Đơn hàng",
+      "kind": "module",
+      "shortDescription": "Dữ liệu minh họa cho viewer.",
+      "purpose": "Khám phá chức năng trong dữ liệu mẫu.",
+      "documentationPath": null,
+      "verification": {
+        "status": "inferred",
+        "runtimeObserved": false,
+        "evidence": [],
+        "notes": "Ví dụ tổng hợp, không phải kết quả phân tích ứng dụng thực tế."
+      },
+      "actors": [
+        "Khách hàng"
+      ],
+      "preconditions": [],
+      "usageSteps": [],
+      "inputs": [],
+      "outputs": [],
+      "mainFlow": [],
+      "alternativeFlows": [],
+      "exceptionCases": [],
+      "relatedFeatureIds": [],
+      "unknowns": {
+        "preconditions": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "usageSteps": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "inputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "outputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "mainFlow": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "alternativeFlows": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "exceptionCases": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "relatedFeatureIds": "Chưa có bằng chứng trong ví dụ tổng hợp."
+      }
+    },
+    {
+      "id": "account.login",
+      "parentId": "account",
+      "name": "Đăng nhập",
+      "kind": "feature",
+      "shortDescription": "Dữ liệu minh họa cho viewer.",
+      "purpose": "Khám phá chức năng trong dữ liệu mẫu.",
+      "documentationPath": null,
+      "verification": {
+        "status": "inferred",
+        "runtimeObserved": false,
+        "evidence": [],
+        "notes": "Ví dụ tổng hợp, không phải kết quả phân tích ứng dụng thực tế."
+      },
+      "actors": [
+        "Khách hàng"
+      ],
+      "preconditions": [],
+      "usageSteps": [],
+      "inputs": [],
+      "outputs": [],
+      "mainFlow": [],
+      "alternativeFlows": [],
+      "exceptionCases": [],
+      "relatedFeatureIds": [],
+      "unknowns": {
+        "preconditions": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "usageSteps": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "inputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "outputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "mainFlow": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "alternativeFlows": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "exceptionCases": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "relatedFeatureIds": "Chưa có bằng chứng trong ví dụ tổng hợp."
+      }
+    },
+    {
+      "id": "shop.purchase",
+      "parentId": "shop",
+      "name": "Mua sản phẩm",
+      "kind": "feature",
+      "shortDescription": "Dữ liệu minh họa cho viewer.",
+      "purpose": "Khám phá chức năng trong dữ liệu mẫu.",
+      "documentationPath": null,
+      "verification": {
+        "status": "inferred",
+        "runtimeObserved": false,
+        "evidence": [],
+        "notes": "Ví dụ tổng hợp, không phải kết quả phân tích ứng dụng thực tế."
+      },
+      "actors": [
+        "Khách hàng"
+      ],
+      "preconditions": [],
+      "usageSteps": [],
+      "inputs": [],
+      "outputs": [],
+      "mainFlow": [],
+      "alternativeFlows": [],
+      "exceptionCases": [
+        "Dữ liệu mẫu: thiếu sản phẩm 0",
+        "Dữ liệu mẫu: thiếu sản phẩm 1",
+        "Dữ liệu mẫu: thiếu sản phẩm 2",
+        "Dữ liệu mẫu: thiếu sản phẩm 3",
+        "Dữ liệu mẫu: thiếu sản phẩm 4",
+        "Dữ liệu mẫu: thiếu sản phẩm 5",
+        "Dữ liệu mẫu: thiếu sản phẩm 6"
+      ],
+      "relatedFeatureIds": [
+        "orders.history"
+      ],
+      "unknowns": {
+        "preconditions": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "usageSteps": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "inputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "outputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "mainFlow": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "alternativeFlows": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "exceptionCases": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "relatedFeatureIds": "Chưa có bằng chứng trong ví dụ tổng hợp."
+      }
+    },
+    {
+      "id": "orders.history",
+      "parentId": "orders",
+      "name": "Xem lịch sử",
+      "kind": "feature",
+      "shortDescription": "Dữ liệu minh họa cho viewer.",
+      "purpose": "Khám phá chức năng trong dữ liệu mẫu.",
+      "documentationPath": null,
+      "verification": {
+        "status": "inferred",
+        "runtimeObserved": false,
+        "evidence": [],
+        "notes": "Ví dụ tổng hợp, không phải kết quả phân tích ứng dụng thực tế."
+      },
+      "actors": [
+        "Khách hàng"
+      ],
+      "preconditions": [],
+      "usageSteps": [],
+      "inputs": [],
+      "outputs": [],
+      "mainFlow": [],
+      "alternativeFlows": [],
+      "exceptionCases": [],
+      "relatedFeatureIds": [],
+      "unknowns": {
+        "preconditions": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "usageSteps": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "inputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "outputs": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "mainFlow": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "alternativeFlows": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "exceptionCases": "Chưa có bằng chứng trong ví dụ tổng hợp.",
+        "relatedFeatureIds": "Chưa có bằng chứng trong ví dụ tổng hợp."
+      }
+    }
+  ]
+}

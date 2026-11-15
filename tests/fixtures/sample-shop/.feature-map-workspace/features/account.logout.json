@@ -1,0 +1,89 @@
+{
+  "actors": [
+    "Khách dùng bản mẫu"
+  ],
+  "alternativeFlows": [],
+  "documentationPath": null,
+  "exceptionCases": [],
+  "id": "account.logout",
+  "inputs": [],
+  "kind": "feature",
+  "mainFlow": [
+    "Trạng thái đăng nhập chuyển sang chưa đăng nhập."
+  ],
+  "name": "Đăng xuất",
+  "outputs": [
+    "Thông báo đã đăng xuất."
+  ],
+  "parentId": "account",
+  "preconditions": [],
+  "purpose": "Kết thúc trạng thái đăng nhập.",
+  "relatedFeatureIds": [
+    "account.login"
+  ],
+  "shortDescription": "Kết thúc trạng thái đăng nhập.",
+  "unknowns": {
+    "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "exceptionCases": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "preconditions": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+  },
+  "usageSteps": [
+    "Chọn Đăng xuất."
+  ],
+  "verification": {
+    "claims": {
+      "actors": [
+        0,
+        1,
+        2
+      ],
+      "mainFlow": [
+        0,
+        1,
+        2
+      ],
+      "outputs": [
+        0,
+        1,
+        2
+      ],
+      "purpose": [
+        0,
+        1,
+        2
+      ],
+      "usageSteps": [
+        0,
+        1,
+        2
+      ]
+    },
+    "evidence": [
+      {
+        "endLine": 4,
+        "path": "README.md",
+        "startLine": 1,
+        "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+        "type": "docs"
+      },
+      {
+        "endLine": 6,
+        "path": "ui/navigation.html",
+        "startLine": 2,
+        "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+        "type": "ui"
+      },
+      {
+        "endLine": 19,
+        "path": "domain.py",
+        "startLine": 17,
+        "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Đăng xuất",
+        "type": "domain"
+      }
+    ],
+    "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+    "runtimeObserved": false,
+    "status": "source_confirmed"
+  }
+}

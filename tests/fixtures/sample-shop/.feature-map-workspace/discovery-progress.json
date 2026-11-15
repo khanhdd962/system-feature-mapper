@@ -1,0 +1,152 @@
+{
+  "coverageGaps": [
+    "UI khai báo chưa nối backend; không quan sát runtime web."
+  ],
+  "coverageSurfaces": [
+    {
+      "gaps": [],
+      "mappedIds": [
+        "account",
+        "shop",
+        "orders"
+      ],
+      "path": "ui/navigation.html",
+      "surface": "navigation"
+    },
+    {
+      "gaps": [],
+      "mappedIds": [
+        "account.login",
+        "account.logout",
+        "shop.purchase",
+        "orders.history",
+        "orders.cancel"
+      ],
+      "path": "routes.py",
+      "surface": "routes"
+    },
+    {
+      "gaps": [
+        "Không có phân quyền đa người dùng"
+      ],
+      "mappedIds": [
+        "shop.purchase",
+        "orders.history",
+        "orders.cancel"
+      ],
+      "path": "domain.py",
+      "surface": "permissions/domain"
+    }
+  ],
+  "nodes": {
+    "account": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    },
+    "account.login": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    },
+    "account.logout": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    },
+    "orders": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    },
+    "orders.cancel": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    },
+    "orders.history": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    },
+    "shop": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    },
+    "shop.purchase": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    },
+    "system": {
+      "analysisComplete": true,
+      "coverageGaps": [],
+      "reason": "",
+      "sources": [
+        "README.md",
+        "routes.py",
+        "ui/navigation.html",
+        "domain.py"
+      ],
+      "state": "complete"
+    }
+  },
+  "phase": "reviewed"
+}

@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "features": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "actors": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "aliases": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "alternativeFlows": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "documentationPath": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "exceptionCases": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "inputs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "kind": {
+            "enum": [
+              "system",
+              "module",
+              "group",
+              "feature"
+            ]
+          },
+          "mainFlow": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "outputs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "parentId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "preconditions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "purpose": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "relatedFeatureIds": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "shortDescription": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "unknowns": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "usageSteps": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "verification": {
+            "additionalProperties": false,
+            "properties": {
+              "claims": {
+                "additionalProperties": {
+                  "items": {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "type": "array"
+                },
+                "type": "object"
+              },
+              "evidence": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "endLine": {
+                      "minimum": 1,
+                      "type": "integer"
+                    },
+                    "path": {
+                      "type": "string"
+                    },
+                    "startLine": {
+                      "minimum": 1,
+                      "type": "integer"
+                    },
+                    "summary": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "enum": [
+                        "ui",
+                        "route",
+                        "authorization",
+                        "domain",
+                        "test",
+                        "docs"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "type",
+                    "summary"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "notes": {
+                "type": "string"
+              },
+              "runtimeObserved": {
+                "type": "boolean"
+              },
+              "status": {
+                "enum": [
+                  "source_confirmed",
+                  "inferred",
+                  "unknown",
+                  "runtime_observed"
+                ]
+              }
+            },
+            "required": [
+              "status",
+              "runtimeObserved",
+              "evidence",
+              "notes"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "purpose",
+          "actors",
+          "parentId",
+          "usageSteps",
+          "preconditions",
+          "verification",
+          "alternativeFlows",
+          "kind",
+          "exceptionCases",
+          "inputs",
+          "mainFlow",
+          "relatedFeatureIds",
+          "outputs",
+          "id",
+          "name",
+          "documentationPath",
+          "shortDescription"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "generatedAt": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "project": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description"
+      ],
+      "type": "object"
+    },
+    "rootId": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "project",
+    "generatedAt",
+    "rootId",
+    "features"
+  ],
+  "type": "object"
+}

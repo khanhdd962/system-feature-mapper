@@ -1,0 +1,33 @@
+test_broken_document_detected (test_builder.BuilderTests.test_broken_document_detected) ... ok
+test_cli_failure (test_builder.BuilderTests.test_cli_failure) ... ok
+test_determinism_unicode_and_markdown (test_builder.BuilderTests.test_determinism_unicode_and_markdown) ... ok
+test_fixture_end_to_end_and_install_twice (test_builder.BuilderTests.test_fixture_end_to_end_and_install_twice) ... ok
+test_missing_evidence (test_builder.BuilderTests.test_missing_evidence) ... ok
+test_partial_and_symlink (test_builder.BuilderTests.test_partial_and_symlink) ... ok
+test_redaction (test_builder.BuilderTests.test_redaction) ... ok
+test_source_change_blocks_resume_build (test_builder.BuilderTests.test_source_change_blocks_resume_build) ... ok
+test_framework_aware_excludes (test_discovery_helpers.DiscoveryTests.test_framework_aware_excludes) ... ok
+test_inventory_and_resume (test_discovery_helpers.DiscoveryTests.test_inventory_and_resume) ... ok
+test_symlink_escape_and_config (test_discovery_helpers.DiscoveryTests.test_symlink_escape_and_config) ... ok
+test_evidenced_errors (test_sample_domain.FixtureDomainTests.test_evidenced_errors) ... ok
+test_purchase_history_cancel (test_sample_domain.FixtureDomainTests.test_purchase_history_cancel) ... ok
+test_arbitrary_depth (test_schema.SchemaTests.test_arbitrary_depth) ... ok
+test_id_stability (test_schema.SchemaTests.test_id_stability) ... ok
+test_invalid (test_schema.SchemaTests.test_invalid) ... ok
+test_paths (test_schema.SchemaTests.test_paths) ... ok
+test_unknowns_and_claim_evidence (test_schema.SchemaTests.test_unknowns_and_claim_evidence) ... ok
+test_valid (test_schema.SchemaTests.test_valid) ... ok
+test_focus_and_keyboard (test_viewer.ViewerTests.test_focus_and_keyboard) ... ok
+test_interactions (test_viewer.ViewerTests.test_interactions) ... ok
+test_large_tree_and_injection (test_viewer.ViewerTests.test_large_tree_and_injection) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 5.146s
+
+OK
+VERIFIED: 7 nodes; 1 Markdown documents; no external resource elements
+INVENTORY: 1 files; 0 gaps; 1 new/changed/deleted paths; workspace=/tmp/tmpfoaszrjm/.feature-map-workspace
+INVENTORY: 1 files; 0 gaps; 2 new/changed/deleted paths; workspace=/tmp/tmpfoaszrjm/.feature-map-workspace
+INVENTORY: 2 files; 2 gaps; 2 new/changed/deleted paths; workspace=/tmp/tmpel_ksmkg/.feature-map-workspace
+INVENTORY: 2 files; 2 gaps; 0 new/changed/deleted paths; workspace=/tmp/tmpel_ksmkg/.feature-map-workspace
+INVENTORY: 2 files; 2 gaps; 1 new/changed/deleted paths; workspace=/tmp/tmpel_ksmkg/.feature-map-workspace

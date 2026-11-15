@@ -1,0 +1,26 @@
+{
+  "actors": [
+    "Khách dùng bản mẫu"
+  ],
+  "architecture": [
+    "Python domain trong bộ nhớ",
+    "Routing và UI khai báo, chưa nối web server"
+  ],
+  "evidence": [
+    {
+      "path": "README.md",
+      "summary": "Mục tiêu và ba khu vực của bản mẫu",
+      "type": "docs"
+    }
+  ],
+  "generatedAt": "2026-11-15T00:00:00Z",
+  "project": {
+    "description": "Quản lý tài khoản, mua sách và đơn hàng trong ví dụ lưu trữ bộ nhớ.",
+    "id": "sample-shop",
+    "name": "Cửa hàng sách mẫu"
+  },
+  "uncertainties": [
+    "Chưa có ứng dụng web nối UI với backend",
+    "Không có phân quyền nhiều người dùng hoặc thanh toán"
+  ]
+}

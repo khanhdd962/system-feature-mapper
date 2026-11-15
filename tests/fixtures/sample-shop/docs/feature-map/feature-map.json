@@ -1,0 +1,879 @@
+{
+  "features": [
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": null,
+      "exceptionCases": [],
+      "id": "account",
+      "inputs": [],
+      "kind": "module",
+      "mainFlow": [],
+      "name": "Tài khoản",
+      "outputs": [
+        "Trạng thái đăng nhập thay đổi."
+      ],
+      "parentId": "system",
+      "preconditions": [],
+      "purpose": "Bắt đầu hoặc kết thúc trạng thái đăng nhập trong bản mẫu.",
+      "relatedFeatureIds": [],
+      "shortDescription": "Bắt đầu hoặc kết thúc trạng thái đăng nhập trong bản mẫu.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "exceptionCases": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "mainFlow": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "preconditions": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Dùng Đăng nhập để bắt đầu.",
+        "Dùng Đăng xuất để kết thúc."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 19,
+            "path": "domain.py",
+            "startLine": 8,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Tài khoản",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    },
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": null,
+      "exceptionCases": [
+        "Thiếu tên hoặc mật khẩu: yêu cầu nhập đủ.",
+        "Thông tin không đúng: từ chối đăng nhập."
+      ],
+      "id": "account.login",
+      "inputs": [
+        "Tên đăng nhập và mật khẩu demo được mô tả trong bản mẫu."
+      ],
+      "kind": "feature",
+      "mainFlow": [
+        "Thông tin hợp lệ làm thay đổi trạng thái đăng nhập và trả thông báo thành công."
+      ],
+      "name": "Đăng nhập",
+      "outputs": [
+        "Thông báo đăng nhập thành công."
+      ],
+      "parentId": "account",
+      "preconditions": [],
+      "purpose": "Bắt đầu phiên sử dụng bản mẫu.",
+      "relatedFeatureIds": [
+        "account.logout",
+        "shop.purchase"
+      ],
+      "shortDescription": "Bắt đầu phiên sử dụng bản mẫu.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "preconditions": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Nhập tên đăng nhập.",
+        "Nhập mật khẩu.",
+        "Chọn Đăng nhập."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "exceptionCases": [
+            0,
+            1,
+            2
+          ],
+          "inputs": [
+            0,
+            1,
+            2
+          ],
+          "mainFlow": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 15,
+            "path": "domain.py",
+            "startLine": 8,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Đăng nhập",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    },
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": null,
+      "exceptionCases": [],
+      "id": "account.logout",
+      "inputs": [],
+      "kind": "feature",
+      "mainFlow": [
+        "Trạng thái đăng nhập chuyển sang chưa đăng nhập."
+      ],
+      "name": "Đăng xuất",
+      "outputs": [
+        "Thông báo đã đăng xuất."
+      ],
+      "parentId": "account",
+      "preconditions": [],
+      "purpose": "Kết thúc trạng thái đăng nhập.",
+      "relatedFeatureIds": [
+        "account.login"
+      ],
+      "shortDescription": "Kết thúc trạng thái đăng nhập.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "exceptionCases": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "preconditions": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Chọn Đăng xuất."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "mainFlow": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 19,
+            "path": "domain.py",
+            "startLine": 17,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Đăng xuất",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    },
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": null,
+      "exceptionCases": [],
+      "id": "orders",
+      "inputs": [],
+      "kind": "module",
+      "mainFlow": [],
+      "name": "Đơn hàng",
+      "outputs": [
+        "Danh sách đơn hoặc xác nhận hủy và hoàn tồn kho."
+      ],
+      "parentId": "system",
+      "preconditions": [
+        "Đã đăng nhập."
+      ],
+      "purpose": "Xem các đơn đã đặt và hủy đơn còn mới.",
+      "relatedFeatureIds": [],
+      "shortDescription": "Xem các đơn đã đặt và hủy đơn còn mới.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "exceptionCases": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "mainFlow": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Xem lịch sử đơn.",
+        "Chọn mã đơn mới cần hủy."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "preconditions": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 50,
+            "path": "domain.py",
+            "startLine": 35,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Đơn hàng",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    },
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": "details/orders.cancel.md",
+      "exceptionCases": [
+        "Chưa đăng nhập: từ chối.",
+        "Không tìm thấy mã đơn: báo lỗi.",
+        "Đơn không còn mới: không cho hủy."
+      ],
+      "id": "orders.cancel",
+      "inputs": [
+        "Mã đơn."
+      ],
+      "kind": "feature",
+      "mainFlow": [
+        "Kiểm tra đăng nhập, tìm đơn và kiểm tra trạng thái mới.",
+        "Chuyển đơn sang đã hủy và tăng lại tồn kho."
+      ],
+      "name": "Hủy đơn mới",
+      "outputs": [
+        "Thông báo đã hủy đơn.",
+        "Đơn đã hủy và tồn kho được hoàn."
+      ],
+      "parentId": "orders",
+      "preconditions": [
+        "Đã đăng nhập.",
+        "Đơn tồn tại và còn mới."
+      ],
+      "purpose": "Hủy đơn mới và hoàn số lượng sách về tồn kho.",
+      "relatedFeatureIds": [
+        "orders.history",
+        "shop.purchase"
+      ],
+      "shortDescription": "Hủy đơn mới và hoàn số lượng sách về tồn kho.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Nhập mã đơn.",
+        "Chọn Hủy đơn."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "exceptionCases": [
+            0,
+            1,
+            2
+          ],
+          "inputs": [
+            0,
+            1,
+            2
+          ],
+          "mainFlow": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "preconditions": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 50,
+            "path": "domain.py",
+            "startLine": 40,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Hủy đơn mới",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    },
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": null,
+      "exceptionCases": [
+        "Chưa đăng nhập: từ chối xem."
+      ],
+      "id": "orders.history",
+      "inputs": [],
+      "kind": "feature",
+      "mainFlow": [
+        "Kiểm tra đăng nhập rồi trả danh sách bản sao các đơn."
+      ],
+      "name": "Xem lịch sử",
+      "outputs": [
+        "Danh sách đơn với mã, sản phẩm, số lượng và trạng thái."
+      ],
+      "parentId": "orders",
+      "preconditions": [
+        "Đã đăng nhập."
+      ],
+      "purpose": "Xem bản sao danh sách đơn trong bộ nhớ của bản mẫu.",
+      "relatedFeatureIds": [
+        "orders.cancel"
+      ],
+      "shortDescription": "Xem bản sao danh sách đơn trong bộ nhớ của bản mẫu.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Mở Đơn hàng."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "exceptionCases": [
+            0,
+            1,
+            2
+          ],
+          "mainFlow": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "preconditions": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 38,
+            "path": "domain.py",
+            "startLine": 35,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Xem lịch sử",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    },
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": null,
+      "exceptionCases": [],
+      "id": "shop",
+      "inputs": [],
+      "kind": "module",
+      "mainFlow": [],
+      "name": "Mua sắm",
+      "outputs": [
+        "Đơn mới và tồn kho được cập nhật."
+      ],
+      "parentId": "system",
+      "preconditions": [
+        "Đã đăng nhập."
+      ],
+      "purpose": "Đặt mua sách có sẵn và giảm tồn kho tương ứng.",
+      "relatedFeatureIds": [],
+      "shortDescription": "Đặt mua sách có sẵn và giảm tồn kho tương ứng.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "exceptionCases": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "mainFlow": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Chọn chức năng Mua sách."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "preconditions": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 33,
+            "path": "domain.py",
+            "startLine": 21,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Mua sắm",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    },
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": "details/shop.purchase.md",
+      "exceptionCases": [
+        "Chưa đăng nhập: từ chối.",
+        "Số lượng không phải số nguyên dương: báo không hợp lệ.",
+        "Không tìm thấy sản phẩm: báo lỗi.",
+        "Không đủ hàng: báo lỗi."
+      ],
+      "id": "shop.purchase",
+      "inputs": [
+        "Sản phẩm.",
+        "Số lượng nguyên dương."
+      ],
+      "kind": "feature",
+      "mainFlow": [
+        "Kiểm tra đăng nhập, số lượng và tồn kho.",
+        "Tạo đơn mới, giảm tồn kho và trả mã đơn."
+      ],
+      "name": "Mua sách",
+      "outputs": [
+        "Mã đơn mới.",
+        "Tồn kho giảm theo số lượng mua."
+      ],
+      "parentId": "shop",
+      "preconditions": [
+        "Đã đăng nhập.",
+        "Có đủ hàng."
+      ],
+      "purpose": "Đặt mua một sản phẩm với số lượng hợp lệ.",
+      "relatedFeatureIds": [
+        "account.login",
+        "orders.history",
+        "orders.cancel"
+      ],
+      "shortDescription": "Đặt mua một sản phẩm với số lượng hợp lệ.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Nhập sản phẩm.",
+        "Nhập số lượng.",
+        "Chọn Mua."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "exceptionCases": [
+            0,
+            1,
+            2
+          ],
+          "inputs": [
+            0,
+            1,
+            2
+          ],
+          "mainFlow": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "preconditions": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 33,
+            "path": "domain.py",
+            "startLine": 21,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Mua sách",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    },
+    {
+      "actors": [
+        "Khách dùng bản mẫu"
+      ],
+      "alternativeFlows": [],
+      "documentationPath": null,
+      "exceptionCases": [],
+      "id": "system",
+      "inputs": [],
+      "kind": "system",
+      "mainFlow": [],
+      "name": "Cửa hàng sách mẫu",
+      "outputs": [
+        "Đơn hàng trong bộ nhớ; thay đổi tồn kho."
+      ],
+      "parentId": null,
+      "preconditions": [],
+      "purpose": "Giúp khách dùng bản mẫu đăng nhập, mua sách và quản lý đơn.",
+      "relatedFeatureIds": [],
+      "shortDescription": "Giúp khách dùng bản mẫu đăng nhập, mua sách và quản lý đơn.",
+      "unknowns": {
+        "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "exceptionCases": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "mainFlow": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+        "preconditions": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+      },
+      "usageSteps": [
+        "Chọn Tài khoản để đăng nhập.",
+        "Chọn Mua sắm để đặt sách.",
+        "Chọn Đơn hàng để xem hoặc hủy đơn mới."
+      ],
+      "verification": {
+        "claims": {
+          "actors": [
+            0,
+            1,
+            2
+          ],
+          "outputs": [
+            0,
+            1,
+            2
+          ],
+          "purpose": [
+            0,
+            1,
+            2
+          ],
+          "usageSteps": [
+            0,
+            1,
+            2
+          ]
+        },
+        "evidence": [
+          {
+            "endLine": 4,
+            "path": "README.md",
+            "startLine": 1,
+            "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+            "type": "docs"
+          },
+          {
+            "endLine": 6,
+            "path": "ui/navigation.html",
+            "startLine": 2,
+            "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+            "type": "ui"
+          },
+          {
+            "endLine": 50,
+            "path": "domain.py",
+            "startLine": 21,
+            "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Cửa hàng sách mẫu",
+            "type": "domain"
+          }
+        ],
+        "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+        "runtimeObserved": false,
+        "status": "source_confirmed"
+      }
+    }
+  ],
+  "generatedAt": "2026-11-15T00:00:00Z",
+  "project": {
+    "description": "Quản lý tài khoản, mua sách và đơn hàng trong ví dụ lưu trữ bộ nhớ.",
+    "id": "sample-shop",
+    "name": "Cửa hàng sách mẫu"
+  },
+  "rootId": "system",
+  "schemaVersion": "1.0.0"
+}

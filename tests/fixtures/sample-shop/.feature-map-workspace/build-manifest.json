@@ -1,0 +1,18 @@
+{
+  "changedSources": [],
+  "outputHashes": {
+    "analysis-report.md": "b6b7f855fdffcb9210a2f6f868094b2ae22e67c3b9302585b753bb94f563bdae",
+    "details/orders.cancel.md": "1464bd2d42b397b2b44c561957d4e8006f513290ced29fb67e584b2aff1562e9",
+    "details/shop.purchase.md": "092a9174b4e8a4e67a7fa27585bacaf4977bd3bbaaedc92519fb92d7e90e4e34",
+    "feature-map.json": "5746003b39a29127e0b509ed14b6c76a5344d6cbbfafdea41ff3c34c07cd3c26",
+    "index.html": "a1cf242204ff5ec2d36d6e26fa9762a3c92930e5b30f32607e722588e7ba2bc2"
+  },
+  "resumeAvailable": true,
+  "schemaVersion": "1.0.0",
+  "sourceHashes": {
+    "README.md": "ea1ed60103858d6d2d52e1f74dec32eab5f4c4d2fe384b1d46a6b761244a414b",
+    "domain.py": "9acf2baff7546ee768d635f6067dde3ae67632329ccc77031e143ea621fa07e7",
+    "routes.py": "8c6eed9eed4865d9e1087c3284bc92a880b5d2c256a74754c0b5b11ead3c9b33",
+    "ui/navigation.html": "1c08cda009a4993d9622ef5eef0844f50b5e5207c9ee491adf8034ffdd5d30ea"
+  }
+}

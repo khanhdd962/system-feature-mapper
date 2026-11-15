@@ -1,0 +1,9 @@
+# Breadth-first structural discovery
+
+Persist discovery-progress.json as `{phase:"discovery",nodes:{"id":{state:"pending",analysisComplete:false,sources:[],coverageGaps:[],reason:""}},coverageGaps:[]}`. Allowed states: pending, in_progress, complete, blocked. Sort queue by depth then stable ID. Mark active parent in_progress before reading; after interruption revisit it. Check direct child business capabilities and save immediately, then proceed across the same depth before the next. No fixed depth limit. Add new child pending entries. Source paths inspected belong in each entry's sources. Blocked requires reason and gap.
+
+Menus are one surface only: inspect permissions, contextual actions, background user-visible results, secondary screens and domain operations. Canonical capability appears once; cross-branch references use relatedFeatureIds. A field/click/validation is usually a usage step. Schema kinds are system/module/group/feature; meaningful actions use feature. Detect cycles and duplicate semantic capabilities manually as well as structural validation.
+
+Exit: every discovered parent has been explored or explicitly blocked, including leaves with no children. Only then begin deep business analysis. Save features by stable ID; never enrich one leaf while other structural branches remain unexamined. Use concise module summaries to reduce rereading.
+
+Resumption: rerun inventory before reusing analysis. Unchanged hashes preserve state. Changed/deleted/new files conservatively invalidate all completion flags in V1; inspect affected branches and reconfirm unaffected modules. This is safe resume, not semantic incremental analysis. source-inventory gaps must be copied into coverage report. `analysis.resume:false` means start analysis afresh; preserve prior artifacts separately rather than silently trust them.

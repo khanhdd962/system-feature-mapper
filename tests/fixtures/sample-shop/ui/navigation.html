@@ -1,0 +1,7 @@
+<!doctype html><html lang="vi"><title>Cửa hàng sách mẫu</title><body>
+<nav><a href="/account/login">Tài khoản</a><a href="/shop/purchase">Mua sắm</a><a href="/orders">Đơn hàng</a></nav>
+<form action="/account/login" method="post"><label>Tên đăng nhập<input name="username"></label><label>Mật khẩu<input name="password" type="password"></label><button>Đăng nhập</button></form>
+<form action="/account/logout" method="post"><button>Đăng xuất</button></form>
+<form action="/shop/purchase" method="post"><label>Sản phẩm<input name="product"></label><label>Số lượng<input name="quantity" type="number"></label><button>Mua</button></form>
+<form action="/orders/cancel" method="post"><label>Mã đơn<input name="order_id"></label><button>Hủy đơn</button></form>
+</body></html>

@@ -1,0 +1,118 @@
+{
+  "actors": [
+    "Khách dùng bản mẫu"
+  ],
+  "alternativeFlows": [],
+  "documentationPath": null,
+  "exceptionCases": [
+    "Chưa đăng nhập: từ chối.",
+    "Số lượng không phải số nguyên dương: báo không hợp lệ.",
+    "Không tìm thấy sản phẩm: báo lỗi.",
+    "Không đủ hàng: báo lỗi."
+  ],
+  "id": "shop.purchase",
+  "inputs": [
+    "Sản phẩm.",
+    "Số lượng nguyên dương."
+  ],
+  "kind": "feature",
+  "mainFlow": [
+    "Kiểm tra đăng nhập, số lượng và tồn kho.",
+    "Tạo đơn mới, giảm tồn kho và trả mã đơn."
+  ],
+  "name": "Mua sách",
+  "outputs": [
+    "Mã đơn mới.",
+    "Tồn kho giảm theo số lượng mua."
+  ],
+  "parentId": "shop",
+  "preconditions": [
+    "Đã đăng nhập.",
+    "Có đủ hàng."
+  ],
+  "purpose": "Đặt mua một sản phẩm với số lượng hợp lệ.",
+  "relatedFeatureIds": [
+    "account.login",
+    "orders.history",
+    "orders.cancel"
+  ],
+  "shortDescription": "Đặt mua một sản phẩm với số lượng hợp lệ.",
+  "unknowns": {
+    "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+  },
+  "usageSteps": [
+    "Nhập sản phẩm.",
+    "Nhập số lượng.",
+    "Chọn Mua."
+  ],
+  "verification": {
+    "claims": {
+      "actors": [
+        0,
+        1,
+        2
+      ],
+      "exceptionCases": [
+        0,
+        1,
+        2
+      ],
+      "inputs": [
+        0,
+        1,
+        2
+      ],
+      "mainFlow": [
+        0,
+        1,
+        2
+      ],
+      "outputs": [
+        0,
+        1,
+        2
+      ],
+      "preconditions": [
+        0,
+        1,
+        2
+      ],
+      "purpose": [
+        0,
+        1,
+        2
+      ],
+      "usageSteps": [
+        0,
+        1,
+        2
+      ]
+    },
+    "evidence": [
+      {
+        "endLine": 4,
+        "path": "README.md",
+        "startLine": 1,
+        "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+        "type": "docs"
+      },
+      {
+        "endLine": 6,
+        "path": "ui/navigation.html",
+        "startLine": 2,
+        "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+        "type": "ui"
+      },
+      {
+        "endLine": 33,
+        "path": "domain.py",
+        "startLine": 21,
+        "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Mua sách",
+        "type": "domain"
+      }
+    ],
+    "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+    "runtimeObserved": false,
+    "status": "source_confirmed"
+  }
+}

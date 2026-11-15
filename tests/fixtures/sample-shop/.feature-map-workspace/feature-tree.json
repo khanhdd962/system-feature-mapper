@@ -1,0 +1,68 @@
+{
+  "nodes": [
+    {
+      "id": "system",
+      "kind": "system",
+      "name": "Cửa hàng sách mẫu",
+      "parentId": null,
+      "shortDescription": ""
+    },
+    {
+      "id": "account",
+      "kind": "module",
+      "name": "Tài khoản",
+      "parentId": "system",
+      "shortDescription": ""
+    },
+    {
+      "id": "shop",
+      "kind": "module",
+      "name": "Mua sắm",
+      "parentId": "system",
+      "shortDescription": ""
+    },
+    {
+      "id": "orders",
+      "kind": "module",
+      "name": "Đơn hàng",
+      "parentId": "system",
+      "shortDescription": ""
+    },
+    {
+      "id": "account.login",
+      "kind": "feature",
+      "name": "Đăng nhập",
+      "parentId": "account",
+      "shortDescription": ""
+    },
+    {
+      "id": "account.logout",
+      "kind": "feature",
+      "name": "Đăng xuất",
+      "parentId": "account",
+      "shortDescription": ""
+    },
+    {
+      "id": "shop.purchase",
+      "kind": "feature",
+      "name": "Mua sách",
+      "parentId": "shop",
+      "shortDescription": ""
+    },
+    {
+      "id": "orders.history",
+      "kind": "feature",
+      "name": "Xem lịch sử",
+      "parentId": "orders",
+      "shortDescription": ""
+    },
+    {
+      "id": "orders.cancel",
+      "kind": "feature",
+      "name": "Hủy đơn mới",
+      "parentId": "orders",
+      "shortDescription": ""
+    }
+  ],
+  "rootId": "system"
+}

@@ -1,0 +1,87 @@
+{
+  "actors": [
+    "Khách dùng bản mẫu"
+  ],
+  "alternativeFlows": [],
+  "documentationPath": null,
+  "exceptionCases": [],
+  "id": "shop",
+  "inputs": [],
+  "kind": "module",
+  "mainFlow": [],
+  "name": "Mua sắm",
+  "outputs": [
+    "Đơn mới và tồn kho được cập nhật."
+  ],
+  "parentId": "system",
+  "preconditions": [
+    "Đã đăng nhập."
+  ],
+  "purpose": "Đặt mua sách có sẵn và giảm tồn kho tương ứng.",
+  "relatedFeatureIds": [],
+  "shortDescription": "Đặt mua sách có sẵn và giảm tồn kho tương ứng.",
+  "unknowns": {
+    "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "exceptionCases": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "inputs": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại.",
+    "mainFlow": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+  },
+  "usageSteps": [
+    "Chọn chức năng Mua sách."
+  ],
+  "verification": {
+    "claims": {
+      "actors": [
+        0,
+        1,
+        2
+      ],
+      "outputs": [
+        0,
+        1,
+        2
+      ],
+      "preconditions": [
+        0,
+        1,
+        2
+      ],
+      "purpose": [
+        0,
+        1,
+        2
+      ],
+      "usageSteps": [
+        0,
+        1,
+        2
+      ]
+    },
+    "evidence": [
+      {
+        "endLine": 4,
+        "path": "README.md",
+        "startLine": 1,
+        "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+        "type": "docs"
+      },
+      {
+        "endLine": 6,
+        "path": "ui/navigation.html",
+        "startLine": 2,
+        "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+        "type": "ui"
+      },
+      {
+        "endLine": 33,
+        "path": "domain.py",
+        "startLine": 21,
+        "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Mua sắm",
+        "type": "domain"
+      }
+    ],
+    "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+    "runtimeObserved": false,
+    "status": "source_confirmed"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "actors": [
+    "Khách dùng bản mẫu"
+  ],
+  "alternativeFlows": [],
+  "documentationPath": null,
+  "exceptionCases": [
+    "Chưa đăng nhập: từ chối.",
+    "Không tìm thấy mã đơn: báo lỗi.",
+    "Đơn không còn mới: không cho hủy."
+  ],
+  "id": "orders.cancel",
+  "inputs": [
+    "Mã đơn."
+  ],
+  "kind": "feature",
+  "mainFlow": [
+    "Kiểm tra đăng nhập, tìm đơn và kiểm tra trạng thái mới.",
+    "Chuyển đơn sang đã hủy và tăng lại tồn kho."
+  ],
+  "name": "Hủy đơn mới",
+  "outputs": [
+    "Thông báo đã hủy đơn.",
+    "Đơn đã hủy và tồn kho được hoàn."
+  ],
+  "parentId": "orders",
+  "preconditions": [
+    "Đã đăng nhập.",
+    "Đơn tồn tại và còn mới."
+  ],
+  "purpose": "Hủy đơn mới và hoàn số lượng sách về tồn kho.",
+  "relatedFeatureIds": [
+    "orders.history",
+    "shop.purchase"
+  ],
+  "shortDescription": "Hủy đơn mới và hoàn số lượng sách về tồn kho.",
+  "unknowns": {
+    "alternativeFlows": "Source bản mẫu không mô tả nội dung này ở mức chức năng hiện tại."
+  },
+  "usageSteps": [
+    "Nhập mã đơn.",
+    "Chọn Hủy đơn."
+  ],
+  "verification": {
+    "claims": {
+      "actors": [
+        0,
+        1,
+        2
+      ],
+      "exceptionCases": [
+        0,
+        1,
+        2
+      ],
+      "inputs": [
+        0,
+        1,
+        2
+      ],
+      "mainFlow": [
+        0,
+        1,
+        2
+      ],
+      "outputs": [
+        0,
+        1,
+        2
+      ],
+      "preconditions": [
+        0,
+        1,
+        2
+      ],
+      "purpose": [
+        0,
+        1,
+        2
+      ],
+      "usageSteps": [
+        0,
+        1,
+        2
+      ]
+    },
+    "evidence": [
+      {
+        "endLine": 4,
+        "path": "README.md",
+        "startLine": 1,
+        "summary": "Mục tiêu, phạm vi, ba khu vực và giới hạn bản mẫu",
+        "type": "docs"
+      },
+      {
+        "endLine": 6,
+        "path": "ui/navigation.html",
+        "startLine": 2,
+        "summary": "Điều hướng, các biểu mẫu và nhãn hành động",
+        "type": "ui"
+      },
+      {
+        "endLine": 50,
+        "path": "domain.py",
+        "startLine": 40,
+        "summary": "Hỗ trợ các hành vi, điều kiện, kết quả và ngoại lệ được mô tả cho Hủy đơn mới",
+        "type": "domain"
+      }
+    ],
+    "notes": "Đã đối chiếu source bản mẫu; chưa quan sát ứng dụng web chạy.",
+    "runtimeObserved": false,
+    "status": "source_confirmed"
+  }
+}
